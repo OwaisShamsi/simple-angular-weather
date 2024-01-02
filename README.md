@@ -1,5 +1,5 @@
 # Weatherapp
-
+## This is a simple weather app that just shows the weather of a specific location, since it is using free api for this, there are limited amount of tries in a single day.
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.5.
 
 ## Development server
