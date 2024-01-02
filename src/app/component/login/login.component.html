@@ -1,0 +1,50 @@
+<div
+  class="alert alert-danger"
+  role="alert"
+  [ngClass]="{ 'd-none': !showErrorMessage }"
+  id="error-message"
+>
+  {{ errorMessage }}
+</div>
+<div
+  class="alert alert-success"
+  role="alert"
+  [ngClass]="{ 'd-none': !showSuccessMessage }"
+  id="success-message"
+>
+  {{ successMessage }}
+</div>
+<div class="container">
+  <br />
+  <div class="header">
+    <h2>Welcome to weather app!</h2>
+    <h4>Login to Continue</h4>
+  </div>
+  <div class="form">
+    <form (ngSubmit)="onSubmit()">
+      <div class="row">
+        <label for="username">Username</label>
+        <input
+          type="text"
+          name="username"
+          id="username"
+          [(ngModel)]="username"
+          placeholder="Enter Username"
+        />
+      </div>
+      <div class="row">
+        <label for="password">Password</label>
+        <input
+          type="password"
+          name="Password"
+          id="password"
+          [(ngModel)]="password"
+          placeholder="Enter Password"
+        />
+      </div>
+      <div class="row">
+        <button class="btn btn-primary submitbutton">Submit</button>
+      </div>
+    </form>
+  </div>
+</div>
